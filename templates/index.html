@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Scoreboard</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <div id="scoreboard">
+        <h2>Ranking</h2>
+        <ul id="score-list">
+            <!-- Scores will be populated here -->
+        </ul>
+    </div>
+    <div id="game">
+        <h1 class="titulo">Game Arena</h1>
+        <form id="score-form">
+            <input type="text" id="player" name="player" placeholder="Nome do jogador" required autocomplete="off">
+            <textarea id="equation" name="equation" readonly rows="5" cols="25"></textarea>
+            <input type="number" id="answer" name="answer" placeholder="Sua resposta" required>
+            <button type="submit">ENVIAR RESPOSTA</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
